@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3 Цепь вызовов</title>
+    </head>
+    <body>
+        <!-- Начало задания "3 Цепь вызовов" -->
+        <script>
+            'use strict';
+            let ladder = {
+                step: 0,
+                up() {
+                    this.step++;
+                    return this;
+                },
+                down() {
+                    this.step--;
+                    return this;
+                },
+                showStep: function () {
+                    alert(this.step);
+                    return this;
+                },
+            };
+            // Нужно возвращать сам объект из каждого вызова функции, чтобы к нему применять следующий метод в цепочке
+            ladder
+                .up()
+                .up()
+                .down()
+                .showStep() // 1
+                .down()
+                .showStep(); // 0
+        </script>
+        <!-- Конец задания "3 Цепь вызовов" -->
+    </body>
+</html>

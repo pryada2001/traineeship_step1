@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3 Объекты-константы?</title>
+    </head>
+    <body>
+        <!-- Начало задания "3 Объекты-константы?" -->
+        <script>
+            'use strict';
+            const user = {
+                name: 'John',
+            };
+
+            // это будет работать?
+            user.name = 'Pete';
+
+            // ------------ Решение ------------
+            // Да, будет работать, ключевое слово const не позволит присвоить объекту user новый объект, а манипуляции со свойствами делать можно так же как при let
+            user = { name: 'Ilya' }; // вызовет ошибку, так как user объявлен как const
+            // ---------------------------------
+        </script>
+        <!-- Конец задания "3 Объекты-константы?" -->
+    </body>
+</html>

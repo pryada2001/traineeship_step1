@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>4 Какой день месяца был много дней назад?</title>
+    </head>
+    <body>
+        <!-- Начало задания "4 Какой день месяца был много дней назад?" -->
+        <script>
+            'use strict';
+            function getDateAgo(date, days) {
+                let dateCopy = new Date(date);
+                dateCopy.setDate(date.getDate() - days);
+                return dateCopy.getDate();
+            }
+
+            let date = new Date(2015, 0, 2);
+
+            alert(getDateAgo(date, 1)); // 1, (1 Jan 2015)
+            alert(getDateAgo(date, 2)); // 31, (31 Dec 2014)
+            alert(getDateAgo(date, 365)); // 2, (2 Jan 2014)
+        </script>
+        <!-- Конец задания "4 Какой день месяца был много дней назад?" -->
+    </body>
+</html>

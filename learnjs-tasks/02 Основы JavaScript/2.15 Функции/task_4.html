@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>4 Функция pow(x,n)</title>
+    </head>
+    <body>
+        <!-- Начало задания "4 Функция pow(x,n)" -->
+        <script>
+            'use strict';
+            function pow(x, n) {
+                return x ** n;
+            }
+            let x = Number(prompt('Введите x'));
+            let n = Number(prompt('Введите n'));
+            if (typeof x != 'number') {
+                alert(`Введённый x не является числом`);
+            } else if (n < 1 || n == null) {
+                alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+            } else {
+                alert(pow(x, n));
+            }
+        </script>
+        <!-- Конец задания "4 Функция pow(x,n)" -->
+    </body>
+</html>

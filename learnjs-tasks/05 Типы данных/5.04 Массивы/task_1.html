@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1 Скопирован ли массив?</title>
+    </head>
+    <body>
+        <!-- Начало задания "1 Скопирован ли массив?" -->
+        <script>
+            'use strict';
+            let fruits = ['Яблоки', 'Груша', 'Апельсин'];
+
+            // добавляем новое значение в "копию"
+            let shoppingCart = fruits;
+            shoppingCart.push('Банан');
+
+            // что в fruits?
+            alert(fruits.length); // ?
+            // Ответ: shoppingCart получает ссылку на тот же массив, что и fruits, поэтому изменения shoppingCart влияют на fruits, значит fruits.length == 4
+        </script>
+        <!-- Конец задания "1 Скопирован ли массив?" -->
+    </body>
+</html>

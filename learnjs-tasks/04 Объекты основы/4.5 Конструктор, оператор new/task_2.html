@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Создайте калькулятор при помощи конструктора, new Calculator</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Создайте калькулятор при помощи конструктора, new Calculator" -->
+        <script>
+            'use strict';
+            function Calculator() {
+                this.read = function () {
+                    this.firstNumber = Number(prompt('Введите первое число', 0));
+                    this.secondNumber = Number(prompt('Введите второе число', 0));
+                };
+                this.sum = () => this.firstNumber + this.secondNumber;
+                this.mul = () => this.firstNumber * this.secondNumber;
+            }
+
+            let calculator = new Calculator();
+            calculator.read();
+
+            alert(`Сумма: ${calculator.sum()}`);
+            alert(`Произведение: ${calculator.mul()}`);
+        </script>
+        <!-- Конец задания "2 Создайте калькулятор при помощи конструктора, new Calculator" -->
+    </body>
+</html>

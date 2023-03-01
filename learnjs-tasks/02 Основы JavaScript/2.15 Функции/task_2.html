@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Перепишите функцию, используя оператор ? или ||</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Перепишите функцию, используя оператор ? или ||" -->
+        <script>
+            'use strict';
+            // Изначальная функция
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                } else {
+                    return confirm('Родители разрешили?');
+                }
+            }
+
+            // Ответ (результат)
+            function checkAge(age) {
+                return age > 18 || confirm('Родители разрешили?');
+            }
+        </script>
+        <!-- Конец задания "2 Перепишите функцию, используя оператор ? или ||" -->
+    </body>
+</html>

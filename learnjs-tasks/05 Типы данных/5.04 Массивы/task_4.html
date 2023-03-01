@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>4 Сумма введённых чисел</title>
+    </head>
+    <body>
+        <!-- Начало задания "4 Сумма введённых чисел" -->
+        <script>
+            'use strict';
+            function sumInput() {
+                const numbers = [];
+                let value;
+                do {
+                    value = prompt('Введите число', 0);
+                    numbers.push(Number(value));
+                } while (value !== '' && value !== null && isFinite(value));
+                let sum = 0;
+                for (let el of numbers) {
+                    sum += el;
+                }
+                return sum;
+            }
+            alert(sumInput());
+        </script>
+        <!-- Конец задания "4 Сумма введённых чисел" -->
+    </body>
+</html>

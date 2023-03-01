@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3 Усечение строки</title>
+    </head>
+    <body>
+        <!-- Начало задания "3 Усечение строки" -->
+        <script>
+            'use strict';
+            const truncate = (str, maxLength) => (str.length <= maxLength ? str : str.slice(0, maxLength - 1) + '…');
+
+            alert(truncate('Вот, что мне хотелось бы сказать на эту тему:', 20) == 'Вот, что мне хотело…');
+            alert(truncate('Всем привет!', 20) == 'Всем привет!');
+        </script>
+        <!-- Конец задания "3 Усечение строки" -->
+    </body>
+</html>

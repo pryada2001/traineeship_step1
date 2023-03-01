@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Исключить обратные ссылки</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Исключить обратные ссылки" -->
+        <script>
+            'use strict';
+            let room = {
+                number: 23,
+            };
+
+            let meetup = {
+                title: 'Совещание',
+                occupiedBy: [{ name: 'Иванов' }, { name: 'Петров' }],
+                place: room,
+            };
+
+            room.occupiedBy = meetup;
+            meetup.self = meetup;
+
+            alert(
+                JSON.stringify(meetup, function replacer(key, value) {
+                    return value == meetup && key != '' ? undefined : value;
+                })
+            );
+
+            /*
+            {
+                "title":"Совещание",
+                "occupiedBy":[{"name":"Иванов"},{"name":"Петров"}],
+                "place":{"number":23}
+            }
+            */
+        </script>
+        <!-- Конец задания "2 Исключить обратные ссылки" -->
+    </body>
+</html>

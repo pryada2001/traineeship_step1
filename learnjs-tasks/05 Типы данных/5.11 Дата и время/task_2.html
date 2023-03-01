@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Покажите день недели</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Покажите день недели" -->
+        <script>
+            'use strict';
+            function getWeekDay(date) {
+                const DAYS = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+                return DAYS[date.getDay()];
+            }
+
+            let date = new Date(2012, 0, 3); // 3 января 2012 года
+            alert(getWeekDay(date)); // нужно вывести "ВТ"
+        </script>
+        <!-- Конец задания "2 Покажите день недели" -->
+    </body>
+</html>

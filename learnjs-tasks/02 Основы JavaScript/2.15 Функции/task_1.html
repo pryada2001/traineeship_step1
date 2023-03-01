@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1 Обязателен ли else?</title>
+    </head>
+    <body>
+        <!-- Начало задания "1 Обязателен ли else?" -->
+        <script>
+            'use strict';
+            // Функция
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                } else {
+                    // ...
+                    return confirm('Родители разрешили?');
+                }
+            }
+            // Работает аналогично функции
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                }
+                // ...
+                return confirm('Родители разрешили?');
+            }
+            // else не нужен
+        </script>
+        <!-- Конец задания "1 Обязателен ли else?" -->
+    </body>
+</html>

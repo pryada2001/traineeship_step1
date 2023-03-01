@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Создайте калькулятор</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Создайте калькулятор" -->
+        <script>
+            'use strict';
+            let calculator = {
+                read() {
+                    this.firstNumber = Number(prompt('Введите первое число', 0));
+                    this.secondNumber = Number(prompt('Введите второе число', 0));
+                },
+                sum() {
+                    return this.firstNumber + this.secondNumber;
+                },
+                mul() {
+                    return this.firstNumber * this.secondNumber;
+                },
+            };
+
+            calculator.read();
+            alert(calculator.sum());
+            alert(calculator.mul());
+        </script>
+        <!-- Конец задания "2 Создайте калькулятор" -->
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>9 Отсортировать пользователей по возрасту</title>
+    </head>
+    <body>
+        <!-- Начало задания "9 Отсортировать пользователей по возрасту" -->
+        <script>
+            'use strict';
+            function sortByAge(arr) {
+                arr.sort((a, b) => (a.age > b.age ? 1 : -1));
+            }
+
+            let vasya = { name: 'Вася', age: 25 };
+            let petya = { name: 'Петя', age: 30 };
+            let masha = { name: 'Маша', age: 28 };
+
+            let arr = [vasya, petya, masha];
+
+            sortByAge(arr);
+
+            // теперь отсортировано: [vasya, masha, petya]
+            alert(arr[0].name); // Вася
+            alert(arr[1].name); // Маша
+            alert(arr[2].name); // Петя
+        </script>
+        <!-- Конец задания "9 Отсортировать пользователей по возрасту" -->
+    </body>
+</html>

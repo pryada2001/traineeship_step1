@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Максимальная зарплата</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Максимальная зарплата" -->
+        <script>
+            'use strict';
+            function topSalary(salaries) {
+                let [maxValue, maxKey] = [-Infinity, null];
+                for (let [key, value] of Object.entries(salaries)) {
+                    if (value > maxValue) {
+                        [maxValue, maxKey] = [value, key];
+                    }
+                }
+                return maxKey;
+            }
+
+            const salaries = {
+                John: 100,
+                Pete: 300,
+                Mary: 250,
+            };
+
+            alert(topSalary(salaries));
+        </script>
+        <!-- Конец задания "2 Максимальная зарплата" -->
+    </body>
+</html>

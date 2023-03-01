@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3 Вызов в контексте массива</title>
+    </head>
+    <body>
+        <!-- Начало задания "3 Вызов в контексте массива" -->
+        <script>
+            'use strict';
+            let arr = ['a', 'b'];
+
+            arr.push(function () {
+                alert(this);
+            });
+
+            arr[2](); // Ключевое слово this
+            // Ответ: ключевое слово this принимает значение самого массива arr, поэтому при вызове функции, содержащейся по индексу 2 в массиве arr, будет выведено содержание массива arr
+        </script>
+        <!-- Конец задания "3 Вызов в контексте массива" -->
+    </body>
+</html>

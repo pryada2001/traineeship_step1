@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1 2 3 4 5 Что выведет alert</title>
+    </head>
+    <body>
+        <!-- Начало задания "1 2 3 4 5 Что выведет alert" -->
+        <script>
+            'use strict';
+
+            // Task #1
+            alert(null || 2 || undefined); // 2
+
+            // Task #2
+            alert(alert(1) || 2 || alert(3)); // 1 и 2
+
+            // Task #3
+            alert(1 && null && 2); // null
+
+            // Task #4
+            alert(alert(1) && alert(2)); // 1 и undefined
+
+            // Task #5
+            alert(null || (2 && 3) || 4); // 3
+        </script>
+        <!-- Конец задания "1 2 3 4 5 Что выведет alert" -->
+    </body>
+</html>

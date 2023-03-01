@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>1 Использование "this" в литерале объекта</title>
+    </head>
+    <body>
+        <!-- Начало задания "1 Использование "this" в литерале объекта" -->
+        <script>
+            'use strict';
+            // Здесь функция makeUser возвращает объект.
+            // Каким будет результат при обращении к свойству объекта ref? Почему?
+            function makeUser() {
+                return {
+                    name: 'John',
+                    ref: this,
+                };
+            }
+            let user = makeUser();
+            // --------- Решение ---------
+            // При обращении к свойству ref, результат будет undefined, так как объект объявлен в качестве возвращаемого из фукнции значения
+
+            alert(user.ref.name); // Каким будет результат?
+            // Результат будет ошибкой, так как у undefined нет свойства name
+            // ---------------------------
+        </script>
+        <!-- Конец задания "1 Использование "this" в литерале объекта" -->
+    </body>
+</html>

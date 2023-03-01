@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>13 Создайте объект с ключами из массива</title>
+    </head>
+    <body>
+        <!-- Начало задания "13 Создайте объект с ключами из массива" -->
+        <script>
+            'use strict';
+            const groupById = (array) =>
+                array.reduce((obj, value) => {
+                    obj[value.id] = value;
+                    return obj;
+                }, {});
+        </script>
+        <!-- Конец задания "13 Создайте объект с ключами из массива" -->
+    </body>
+</html>

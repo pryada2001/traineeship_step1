@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2 Почему 6.35.toFixed(1) == 6.3?</title>
+    </head>
+    <body>
+        <!-- Начало задания "2 Почему 6.35.toFixed(1) == 6.3?" -->
+        <script>
+            'use strict';
+            alert((6.35).toFixed(1)); // 6.3
+            // Округление 6.35 до 6.3 происходит из-за ошибки в числах с плавающей точкой в JS
+            // Лучше использовать следующий метод, он округляет без ошибок
+            alert(Math.round(6.35 * 10) / 10); // 6.4
+        </script>
+        <!-- Конец задания "2 Почему 6.35.toFixed(1) == 6.3?" -->
+    </body>
+</html>
