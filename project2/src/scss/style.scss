@@ -106,6 +106,18 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    padding: 27px 38px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #444240;
+    color: #ffffff !important;
+}
+
 .header-menu {
     height: 85px;
     padding: 0 100px;
@@ -214,15 +226,7 @@ body {
             margin-bottom: 64px;
         }
         .btn-hero-catalog {
-            padding: 27px 38px;
-            font-family: 'Roboto';
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
             background: #444240;
-            color: #ffffff;
         }
     }
 
@@ -377,5 +381,74 @@ body {
                 border: 1px solid #8b8371;
             }
         }
+    }
+}
+
+.section-quality {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 53px 177px;
+    overflow: hidden;
+    position: relative;
+    .slider {
+        flex: 0 0 520px;
+        position: relative;
+        .img-container {
+            img {
+                width: 520px;
+            }
+        }
+        .switcher {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: absolute;
+            right: 80px;
+            bottom: -32px;
+            .number {
+                font-family: 'Prata';
+                font-size: 12px;
+                line-height: 16px;
+                color: rgba(27, 26, 23, 0.82);
+            }
+        }
+    }
+    .text-box {
+        .header {
+            font-size: 32px;
+            line-height: 43px;
+            color: #1b1a17;
+            margin-bottom: 38px;
+        }
+        .description {
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 150%;
+            color: #444240;
+            margin-bottom: 72px;
+        }
+        .btn-quality {
+            background-color: #d4b098;
+        }
+    }
+    .filler-left-side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 468px;
+        height: 519px;
+        background-color: #f7f5ef;
+    }
+    .upper-ellipse {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .lower-ellipse {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }

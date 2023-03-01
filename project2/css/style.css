@@ -101,6 +101,18 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 27px 38px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #444240;
+  color: #ffffff !important;
+}
+
 .header-menu {
   height: 85px;
   padding: 0 100px;
@@ -241,15 +253,7 @@ body {
   margin-bottom: 64px;
 }
 .section-hero .hero-text-box .btn-hero-catalog {
-  padding: 27px 38px;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   background: #444240;
-  color: #ffffff;
 }
 .section-hero .hero-img {
   height: 100%;
@@ -413,4 +417,81 @@ body {
   width: 30px;
   height: 0px;
   border: 1px solid #8b8371;
+}
+
+.section-quality {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  padding: 53px 177px;
+  overflow: hidden;
+  position: relative;
+}
+.section-quality .slider {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 520px;
+          flex: 0 0 520px;
+  position: relative;
+}
+.section-quality .slider .img-container img {
+  width: 520px;
+}
+.section-quality .slider .switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  position: absolute;
+  right: 80px;
+  bottom: -32px;
+}
+.section-quality .slider .switcher .number {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.section-quality .text-box .header {
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+  margin-bottom: 38px;
+}
+.section-quality .text-box .description {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+  margin-bottom: 72px;
+}
+.section-quality .text-box .btn-quality {
+  background-color: #d4b098;
+}
+.section-quality .filler-left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 468px;
+  height: 519px;
+  background-color: #f7f5ef;
+}
+.section-quality .upper-ellipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.section-quality .lower-ellipse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
